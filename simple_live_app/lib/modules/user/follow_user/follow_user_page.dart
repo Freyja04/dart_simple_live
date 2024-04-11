@@ -14,7 +14,7 @@ class FollowUserPage extends GetView<FollowUserController> {
 
   @override
   Widget build(BuildContext context) {
-    controller.filterMode.value=0;
+    controller.filterMode.value=1;
     var count = MediaQuery.of(context).size.width ~/ 500;
     if (count < 1) count = 1;
     return Scaffold(
@@ -94,13 +94,6 @@ class FollowUserPage extends GetView<FollowUserController> {
                 spacing: 12,
                 children: [
                   FilterButton(
-                    text: "全部",
-                    selected: controller.filterMode.value == 0,
-                    onTap: () {
-                      controller.setFilterMode(0);
-                    },
-                  ),
-                  FilterButton(
                     text: "直播中",
                     selected: controller.filterMode.value == 1,
                     onTap: () {
@@ -112,6 +105,13 @@ class FollowUserPage extends GetView<FollowUserController> {
                     selected: controller.filterMode.value == 2,
                     onTap: () {
                       controller.setFilterMode(2);
+                    },
+                  ),
+                  FilterButton(
+                    text: "全部",
+                    selected: controller.filterMode.value == 0,
+                    onTap: () {
+                      controller.setFilterMode(0);
                     },
                   ),
                 ],

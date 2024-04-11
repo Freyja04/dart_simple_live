@@ -1,7 +1,7 @@
 {
-    "version": "1.5.3",
-    "version_num": 10503,
-    "version_desc": "- 修复虎牙播放中断问题 #339 @lemonfog\n- 支持多端数据同步\n- Linux使用mimalloc防止内存泄漏 #328 @madoka773",
+    "version": "1.5.4",
+    "version_num": 10504,
+    "version_desc": "关注列表页",
     "prerelease":false,
-    "download_url": "https://github.com/xiaoyaocz/dart_simple_live/releases"
+    "download_url": "https://github.com/Freyja04/dart_simple_live/releases"
 }
